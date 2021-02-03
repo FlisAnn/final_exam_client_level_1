@@ -5,10 +5,12 @@ describe('Visitor can see a list shows', () => {
       cy.route({
         method: 'GET',
         url: 'https://content.viaplay.se/pc-se/serier/samtliga',
-        response: 'fx:viaplay-tvshows.json',
+        response: 'fx:viaplay_tvshows.json',
       })
-      cy.visit('/')
+      cy.visit("/")
     })
+
+  
 
     it('successfully view all listed shows', () => {
       cy.get("[data-cy='shows-index']").within(() => {

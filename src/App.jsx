@@ -2,8 +2,8 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>
-      
+    <div data-cy='shows-index'>
+      Hi there
     </div>
   )
 }
