@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
+import store from './state/store/configureStore'
 import 'semantic-ui-css/semantic.min.css'
 import './index.css';
-import App from './App';
+import { Provider } from 'react-redux'
 import reportWebVitals from './reportWebVitals';
 import axios from 'axios'
 
@@ -11,9 +13,9 @@ const store = configureStore()
 window.store = store
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
