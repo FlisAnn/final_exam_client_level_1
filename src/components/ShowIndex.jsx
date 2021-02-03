@@ -1,14 +1,14 @@
 import React, {useEffect } from 'react'
 import { useSelector, useDispatch } from "react-redux";
 import getShowsData from '../modules/shows'
-import ShowCards from './ShowsCard'
+import ShowsCard from './ShowsCard'
 
 const ShowIndex = () => {
   const dispatch = useDispatch
   const shows = useSelector(state => state.showsFeed)
 
   useEffect(() => {
-    showsFeed.index(dispatch)
+    getShowsData.index(dispatch)
   }, [])
 
   let displayShows = shows.map((show) => {
@@ -16,9 +16,9 @@ const ShowIndex = () => {
   })
 
   return (
-    <div>
+    <Card.Group>
       {displayShows}
-    </div>
+    </Card.Group>
   )
 }
 

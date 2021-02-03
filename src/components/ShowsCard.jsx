@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from "semantic-ui-react";
-const showsCard = () => {
+const ShowsCard = () => {
   return (
     <Card 
     data-cy='shows-index'>
@@ -10,4 +10,4 @@ const showsCard = () => {
   )
 }
 
-export default showsCard
+export default ShowsCard
