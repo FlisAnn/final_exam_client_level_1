@@ -9,7 +9,7 @@ import reportWebVitals from './reportWebVitals';
 import axios from 'axios'
 
 axios.defaults.baseURL = "https://content.viaplay.se/pc-se/serier/samtliga"
-const store = configureStore()
+
 window.store = store
 
 ReactDOM.render(
