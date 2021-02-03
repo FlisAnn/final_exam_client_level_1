@@ -1,7 +1,7 @@
 import React, {useEffect } from 'react'
 import { useSelector, useDispatch } from "react-redux";
 import getShowsData from '../modules/shows'
-import ShowsCard from './ShowsCard'
+// import ShowsCard from './ShowsCard'
 import { Card } from "semantic-ui-react";
 
 const ShowIndex = () => {

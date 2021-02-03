@@ -1,14 +1,16 @@
 import React from 'react'
-import ShowIndex from './components/ShowIndex'
+// import ShowIndex from './components/ShowIndex'
+import Footer from './components/Footer'
+import Header from './components/Header'
 
 const App = () => {
-
   return (
     <>
-     <ShowIndex/>
+      <Header />
+      {/* <ShowIndex/> */}
+      <Footer />
     </>
   )
 }
 
 export default App
-
